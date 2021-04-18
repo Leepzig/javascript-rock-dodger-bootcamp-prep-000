@@ -108,8 +108,7 @@ function createRock(x) {
 function endGame() {
   clearInterval(gameInterval)
   ROCKS.forEach(function(value) {
-    GAME.removeChild(value)
-    ROCKS.shift()
+    value.remove()
   })
 
 }

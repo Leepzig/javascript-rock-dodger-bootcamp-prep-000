@@ -74,7 +74,7 @@ function createRock(x) {
        //GAME.removeChild(rock)
      } else {
        //console.log("the rock moved 2px")
-       moveRock()
+       window.requestAnimationFrame(moveRock)
      }
     /**
      * Otherwise, if the rock hasn't reached the bottom of

@@ -115,9 +115,9 @@ function endGame() {
 //this is registering as failing
 function moveDodger(e) {
   if (e.which === LEFT_ARROW) {
-    moveDodgerLeft()
+    window.requestAnimationFrame(moveDodgerLeft)
   } else if (e.which === RIGHT_ARROW) {
-    moveDodgerRight()
+    window.requestAnimationFrame(moveDodgerRight)
   }
    //window.requestAnimationFrame(moveDodger)
 }

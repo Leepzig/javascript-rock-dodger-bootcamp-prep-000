@@ -70,8 +70,7 @@ function createRock(x) {
        console.log(checkCollision(rock))
        endGame()
      } else if (top >= 380) {
-       //console.log("do What?")
-       //GAME.removeChild(rock)
+       rock.remove()
      } else {
        //console.log("the rock moved 2px")
        window.requestAnimationFrame(moveRock)

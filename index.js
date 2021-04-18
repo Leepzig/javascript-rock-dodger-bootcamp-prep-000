@@ -110,7 +110,6 @@ function endGame() {
     value.remove()
   })
   alert("YOU LOSE!!!!!")
-
 }
 
 //this is registering as failing

@@ -109,6 +109,7 @@ function endGame() {
   ROCKS.forEach(function(value) {
     value.remove()
   })
+  alert("YOU LOSE!!!!!")
 
 }
 

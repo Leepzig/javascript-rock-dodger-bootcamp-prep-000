@@ -119,7 +119,7 @@ function moveDodger(e) {
     e.stopPropagation()
     moveDodgerLeft()
   } else if (e.which === RIGHT_ARROW) {
-    window.requestAnimationFrame(moveDodgerRight)
+    moveDodgerRight())
   }
    window.requestAnimationFrame(moveDodger)
 }
@@ -129,7 +129,7 @@ function moveDodgerLeft() {
   if (left > 0) {
     var newLeft = left - 4
     DODGER.style.left = newLeft.toString() + "px"
-    moveDodgerLeft()
+    window.requestAnimationFrame(moveDodgerLeft)
   }
 }
 

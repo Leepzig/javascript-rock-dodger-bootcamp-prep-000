@@ -11,7 +11,7 @@ const ROCKS = []
 const START = document.getElementById('start')
 
 var gameInterval = null
-
+ 
 /**
  * Be aware of what's above this line,
  * but all of your work should happen below.
@@ -121,7 +121,7 @@ function moveDodger(e) {
   } else if (e.which === RIGHT_ARROW) {
     moveDodgerRight()
   }
-   window.requestAnimationFrame(moveDodger)
+   //window.requestAnimationFrame(moveDodger)
 }
 
 function moveDodgerLeft() {
